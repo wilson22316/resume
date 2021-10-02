@@ -17,10 +17,11 @@ body {
 }
 
 .page1 {
-  min-height: 100vh;
-  background: url("https://www.10wallpaper.com/wallpaper/1920x1200/1506/emerald_lake_louise_canada-HD_Desktop_Wallpaper_1920x1200.jpg") no-repeat;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw5MXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   background-size: cover;
-  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: 100% 55%;
 }
 
 .header {
@@ -32,7 +33,7 @@ body {
 .header--active {
   width: 100vw;
   top: 0;
-  background: #000;
+  background: #343a40;
   color: #fff;
 }
 
@@ -261,9 +262,10 @@ body {
   left: 0;
   margin-top: 30px;
   width: 350px;
-  height: 262.5px;
+  height: 250px;
   background: rgba(0, 0, 0, 0.65);
   background-size: cover;
+  border-radius: 10px;
   opacity: 0;
   text-align: center;
 }
@@ -285,9 +287,11 @@ body {
 }
 
 .pd1 {
+  border-radius: 10px;
   margin-top: 30px;
   width: 350px;
-  height: 262.5px;
+  height: 250px;
+  background: #7ceaf8;
 }
 
 .btn-outline-light:hover {
@@ -304,7 +308,7 @@ body {
 }
 
 .footer {
-  background: #000;
+  background: #343a40;
   padding: 10px;
   line-height: 36px;
 }
@@ -349,6 +353,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .page1 {
+    background-size: 100% 100%;
+    background-position: 50% 0;
+  }
   .header_menu {
     padding: 0 5%;
   }
@@ -412,6 +420,12 @@ body {
   .footer {
     padding: 5px;
     line-height: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page1 {
+    background-size: 150% 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
