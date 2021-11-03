@@ -244,10 +244,18 @@ body {
   margin-top: 8px;
 }
 
+.work_display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .cover--all {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  margin: 0 30px;
 }
 
 .cover {
@@ -255,7 +263,7 @@ body {
   position: relative;
 }
 
-.cover_content {
+.cover_content, .cover_content2 {
   display: inline-block;
   position: absolute;
   top: 0;
